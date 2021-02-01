@@ -94,10 +94,9 @@ label start:
     "就是嘛，一个死肥宅，凭什么被关注。
      又不是什么重要人物，也不是什么巨佬，才不会被妮可这群卷怪关注吧。"
     "不过，这样好像也挺好。"
-    show black with anticlockwise
 
     ##一教外景
-    scene first_teaching_building with anticlockwise
+    scene first_teaching_building with tran_anticlockwise
 
     "熙熙攘攘的人潮。"
     "刚刚下课，大家应该都在赶往食堂，或者回宿舍吧。"
@@ -117,10 +116,9 @@ label start:
     "不过在这里，连接着老北门和一教的路叫樱花道，道旁满植樱花树。"
     "每年春天，这里就是一片烂漫的绯红，一教橘红的外墙看起来也变得柔和。"
     "这大概是这个学校最美的地方了。"
-    show black with anticlockwise
 
     ## 食堂外景
-    scene canteen_outside with anticlockwise
+    scene canteen_outside with tran_anticlockwise
 
     "雨不大，应该，算是不大吧，预报也是写着“小雨”。"
     "合肥这个季节还是很冷，并不是那种刺骨的严寒，毕竟已经三月。"
@@ -162,10 +160,9 @@ label start:
          我预感食堂没几个人，就是专门给我们准备的。」"
     
     "路上有不少人提着打包的袋子走向宿舍楼，我竟然有点相信这预感了。"
-    show black with anticlockwise
 
     ## 食堂内景
-    scene canteen_inside with dissolve
+    scene canteen_inside with tran_anticlockwise
 
     lyh "「呜啊，今天也这么多人来食堂吗。」"
     sm  "「早给你说过了。谁让你不快点从教室出来，非要在教室搞什么3P。」"
@@ -219,10 +216,9 @@ label start:
     sm  "「你才kimoi吧，脑子里都是什么啊。」"
     lyh "「你不是要梦想吗？我给你具现化一下。」"
     sm  "「好了好了，我知道我在想桃子了，赶紧吃饭吧，下午还有课，还要不要午睡了。」"
-    scene black with dissolve
 
     ## 宿舍内景
-    scene dormitory_inside with dissolve
+    scene dormitory_inside with tran_anticlockwise
 
     "舒服的午睡。"
     "也许是因为高中并不允许，以前我并没有午睡的习惯。
@@ -269,10 +265,9 @@ label start:
     sm  "「好了，这下真的迟到了。」"
     
     "我屈服了，从柜子里拿了一双刚拆开的全新的袜子给他，他才免于一下午的透心凉。"
-    scene black with dissolve
 
     ## 教室内景
-    scene classroom with dissolve
+    scene classroom with tran_anticlockwise
     
     "数据结构。"
     "这我得认真听了。但是还是不免偶尔地走神，
@@ -299,10 +294,9 @@ label start:
     "是不是我小时候也听过这种东西？"
     "不对，我爸妈都是普通白领，怎么会研究这种东西。"
     "记错了吧..."
-    scene black with dissolve
 
     ## 宿舍内景
-    scene dormitory_inside with dissolve
+    scene dormitory_inside with tran_anticlockwise
 
     ## 应潮视角
     yc  "「哈，终于改完了。」"
@@ -339,10 +333,9 @@ label start:
 
     "我说，明明时间那么紧迫，你倒是还能这么自在地开玩笑吗。"
     "该说不愧是你吗。"
-    scene black with dissolve
 
     ## 食堂内景
-    scene canteen_inside with dissolve
+    scene canteen_inside with tran_anticlockwise
 
     hzy "「应潮，你毕业设计主题定了吗？」"
     yc  "「你不是早就知道了吗。」"
@@ -354,10 +347,9 @@ label start:
     yc  "「谢谢你的好意，但是我不会采纳的。对了，我缺个助手，你来不来帮忙啊，
          到时候出了文章，二作写你的名字也不是不可以哦。」"
     hzy "「可拉倒吧，我对这玩意一无所知，怕是只能拖后腿。应神你加油。」"
-    scene black with dissolve
 
     ## 校园外景
-    scene first_teaching_building with dissolve
+    scene school_outside with tran_anticlockwise
 
     "他说的没错。倘若我只以完成任务为目标，我大可以把以前的东西拿出来充数，也能轻松过关。"
     "但是我要完成的这个项目，绝非是出于兴趣。"
@@ -375,7 +367,7 @@ label start:
     "由于没有拿出实际的成果，这个“突破”随即被人们忘记。"
     "真相是实验失败了。主导这个研究的，研究员应晓，也就是我爷爷，被迫离开了这里。"
     "于是这个研究就交由他的儿子，还有孙子，继续进行。"
-    scene black with dissolve
+    scene black with tran_water
     ## 回忆场景
 
     应响 "「这不可能。理论的推导已经到达了极限，没有人体实验数据，根本不能称之为一个成果。」"
@@ -396,7 +388,6 @@ label start:
     yx "「...」"
     应响 "「是时候停止这荒谬的坚持了。这答案并非吾辈能够找得到的。我不会再继续这个研究了。」"
     应响 "「这些资料您拿回去吧。我会去找一份能养活您还有这个家庭的工作，请您不要再继续殚精竭虑地研究了。」"
-    scene black with dissolve
 
     "刺耳的摔门声终结了这段对话。一向儒雅的父亲，几乎是在向爷爷怒吼了。"
     "我当时躲在屋子里，听到了全过程。"
@@ -404,7 +395,7 @@ label start:
      对于共鸣的研究，从此再没有人敢向他提起。"
     "道路选择凡人，天才选择道路。我选择投身于科研，可是，我到底是哪一个呢。"
 
-    scene first_teaching_building with dissolve
+    scene school_outside with tran_water
     hzy "「应潮，你说啊，从这个学校毕业的人，都会去做科研工作吗？」"
     yc  "「蛤，谁说的。科研这玩意门槛可不低啊。」"
     hzy "「可是，你看这“科学技术”四个字，不就意味着这个地方的主旋律吗。」"
@@ -427,10 +418,9 @@ label start:
     "但是正因为遥远，所以神圣。"
     "大概彼岸的意义仅存在于路上吧。"
     "我只要专注于风雨兼程就是了。"
-    scene black with dissolve
 
     ## 宿舍内景
-    scene dormitory_inside with dissolve
+    scene dormitory_inside with tran_anticlockwise
 
     ## sm视角
     "美好的夜晚一定要有gal。"
@@ -469,11 +459,11 @@ label start:
          所以你赶紧睡觉吧，明天我可不喊你起床了。」"
     lyh "「谁要你喊啊，哈—— 晚安，单身狗。」"
     sm  "「信不信我揍你啊！」"
-    scene black with dissolve
+    scene black with anticlockwise
     "..."
 
     ## 一教内景
-    scene classroom with dissolve
+    scene classroom with anticlockwise
 
     sm  "「哈啊，又是一下午烦人的大物实验。」"
     lyh "「那个电阻箱上面的标签还是1978年的。这玩意比科带新校区还老了。」"
@@ -486,10 +476,9 @@ label start:
     "现在科研实验室都搬到别处了，一教现在只作为大物实验教学楼使用。"
     "flxg..."
     "不去管它了，总之今天也顺利结束了。"
-    show black with anticlockwise
 
     ## 一教一楼
-    scene first_teaching_building with dissolve
+    scene first_teaching_building_outside with tran_anticlockwise
 
     "我和梁易寒走下楼梯。"
     lyh "「完蛋，我上次报告怎么没交。」"
@@ -522,7 +511,7 @@ label start:
     "迟疑了一下，正欲迈开脚步，一切突然被强光笼罩。"
 
     ## 一教
-    scene first_teaching_building with close
+    scene first_teaching_building_outside with close
     "再恢复视野时，眼前已然恢复“正常”的静谧。"
     "幻觉吗？是我熬夜太多了吗？"
 
@@ -549,10 +538,9 @@ label start:
     sm  "「我真的看到了啊。我掐了自己一下，疼的啊。」"
     lyh "「行了行了，知道你看到了。赶紧走吧。」"
     sm  "「喂！你这个家伙！」"
-    show black with anticlockwise
 
     ## 食堂内景
-    scene canteen_inside with anticlockwise
+    scene canteen_inside with tran_anticlockwise
 
     lyh "「所以说，你在看到那个场景之前，有什么征兆吗？」"
     sm  "「好像也没什么吧。就是你上楼了，我一回头就感觉什么东西发生了变化。
@@ -601,10 +589,9 @@ label start:
     "..."
     "总感觉，好怀念呢。"
     "抑或是，一种向往？"
-    scene black with dissolve
 
     ## 一教内景
-    scene classroom with dissolve
+    scene classroom with tran_anticlockwise
     ##（下课铃）
     teacher "哦，还有个思考题，大家简单写一下吧。我看看大家掌握的怎么样，课后交给助教。"
     "又是思考题吗。这题似乎并不容易。"
@@ -641,10 +628,10 @@ label start:
     "这题绝对没有这么麻烦。"
     "仔细一看，又是图表，又是函数式，甚至有几个明显是计算机计算的数据。"
     "那这也太卷了吧..."
-    scene black with dissolve
+    scene black with anticlockwise
     "..."
     "..."
-    scene classroom with dissolve
+    scene classroom with anticlockwise
     "下节课是数据库。"
     "准确的说是数据库系统基本原理。"
     "操作都是代码，虽然显得很生硬，但是看熟了也很自然。"
@@ -674,11 +661,11 @@ label start:
     yc  "「别乱传些有的没的啊，什么SCI都是不实消息。现在就当我是你们助教，严肃点，要上课了。」"
     ##（上课铃）
     "我们转回去。"
-    scene black with dissolve
+    scene black with anticlockwise
     "..."
 
     ## 课间
-    scene classroom with dissolve
+    scene classroom with anticlockwise
     sm  "「话说，lyh，数据结构上周作业第五题是不是批错了啊。」"
     lyh "「嗯？哪一题？」"
     sm  "「就那个写二叉树的。我觉得我这么写没问题啊。」"
@@ -718,7 +705,7 @@ label start:
     sm  "「可以。学长有什么事情吗？」"
     yc  "「可能，我要哪天再找你当面说。」"
     ## （上课铃）
-    scene black with dissolve
+    scene black with tran_water
     "脑海中一瞬间浮现出几个画面，"
     # scene xxx with dissolve
     "那个绯红色的下午，"
@@ -726,14 +713,14 @@ label start:
     "那本破旧的《脑科学实验讲义》，"
     #
     "然后， 一切被皑皑白雪覆盖。"
-    scene black with dissolve
+    scene black with tran_water
 
     ## 过场，黑屏，右下角显示 "
     ## TODO: 隐藏文本框，文字位置调整
     "对于不可言说之物，理应保持沉默。"
 
     ## 宿舍内景
-    scene dormitory_inside with dissolve
+    scene dormitory_inside with anticlockwise
     "应潮学长叫我下午去USTC1958喝一杯。显然是为了“幻觉”的事情。"
     sm  "「梁易寒你不去吗？」"
     lyh "「我？我为什么要去。」"
@@ -743,10 +730,9 @@ label start:
     sm  "「好吧。」"
     "梁易寒做出了一幅完全事不关己的样子。"
     "但是这确实只能由我自己来说明。那就不麻烦他了。"
-    scene black with dissolve
 
     ## 1958外景
-    scene USTC1958 with dissolve
+    scene USTC1958 with tran_anticlockwise
     yc "「是sm同学吧，幸会！」"
     "他首先伸出右手。"
     sm "学长好！"
@@ -832,11 +818,11 @@ label start:
     "并非因为学长的学识，况且我也并不熟悉他。但是这件事似乎对我而言无比真实。"
     "那这也算是我的科研经历了吗？"
     "算了，不去多想了。嘛，本科生搞科研，如果不是特别优秀的话，大概也就停留在感受的层面吧。"
-    scene black with dissolve
+    scene black with anticlockwise
     "..."
 
     ## 宿舍内景
-    scene dormitory_inside with dissolve
+    scene dormitory_inside with anticlockwise
     lyh "「回来的很早啊。我还以为你要和学长谈论严肃的学术问题，要弄得很晚呢。
          喏，我买了点火烧。你吃吗？」"
     sm  "「我刚刚从食堂回来啊，哪里有肚子吃这个。」"
@@ -859,13 +845,13 @@ label start:
     lyh "「没什么，自言自语罢了。」"
     "疑惑。眼前的这个人一幅漠不关心的样子，却又好像讳莫如深。到底是什么东西啊。"
     "不管了，先把作业写起来吧。"
-    scene black with dissolve
+    scene black with anticlockwise
     "..."
     "..."
 
     ## 应潮视角
     ## 1958外景
-    scene USTC1958 with dissolve
+    scene USTC1958 with anticlockwise
     yc "「啊，这咖啡味道还不错。不过好贵啊。」"
     "我还是坐在那张桌子旁，一口一口慢慢喝完了这种漂浮着细小的白色泡沫的，褐色的液体。"
     "用名为咖啡因的物质刺激神经，也就在刺激着感受到的一切。"
@@ -877,16 +863,17 @@ label start:
     "..."
     "不早了，该回去了。"
     ## （几个场景）
+    scene black with anticlockwise
     "去一趟管科楼吧，今天加班，把周末组会的材料写完。"
     ## 一教北边的路口。
-    scene first_teaching_building with dissolve
+    scene first_teaching_building_outside with dissolve
     "不少人去上晚自习。这会路口居然还有不少人。应该都是去五教或者管科楼的吧。"
     "？？？" "「啊，不好意思，没撞到您吧？」"
     "一个身影匆忙从我旁边挤过去。听声音是女生。她的外套蹭到了我的书包，但是并没有撞到我。"
     yc "「没事，注意安全，别跑太快了。」"
     "？？？" "「那就好！谢谢您！」"
     "古怪的敬语。我摇摇头，继续思考讲义的修改稿。"
-    scene black with dissolve
+    scene black with anticlockwise
     "..."
     ## 管科楼内景。
     scene office with dissolve
@@ -903,7 +890,7 @@ label start:
     yc "「请进！」"
     "门被小心地推开。眼前出现了一个女生的身影。"
     "？？？" "「那个，是应潮同学吗？」"
-    scene black with dissolve
+    scene white with Dissolve(4.5)
 
     ##第一章 ED
 

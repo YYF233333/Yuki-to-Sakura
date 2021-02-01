@@ -898,9 +898,20 @@ define anticlockwise = ImageDissolve("liluo_common/common/transition/clockwise.p
 define push_left = CropMove(2.0, "custom", startcrop=(0.5, 0.0, 0.0, 1.0), endcrop=(0.0, 0.0, 1.0, 1.0))
 
 define tran_clockwise = MultipleTransition([False, clockwise ,Solid("#000"), clockwise, True])
+define tran_anticlockwise = MultipleTransition(
+    [
+        False,
+        anticlockwise,
+        Solid("#000"),
+        Pause(0.5),
+        Solid("#000"),
+        anticlockwise,
+        True
+    ]
+)
 
 define tran_close = MultipleTransition([False, close ,Solid("#000"), close ,True])
-define tran_water = ImageDissolve("liluo_common/common/transition/watertran.png", 0.5, 64)
+define tran_water = ImageDissolve("liluo_common/common/transition/watertran.png", 1.0, 128)
 define tran_light = ImageDissolve("liluo_common/common/transition/snaketran.png", 0.5, 64)
 define tran_fog = ImageDissolve("liluo_common/common/transition/fogtran.png", 0.5, 64)
 define tran_fast = ImageDissolve("liluo_common/common/transition/fasttran.png", 0.5, 64)
