@@ -2,6 +2,7 @@
 
 ### 脚本归类  
     character: 用于存放角色对象及其属性  
+    character_image: 用于存放立绘  
     cg: 存放背景和cg及其属性  
     transform: 用于存放动画和转场效果  
     chapterX: 用于存放各章脚本  
@@ -20,9 +21,8 @@
     第一章文本  
     添加了动画库liluo_common  
     统一材质分辨率至1920*1080，修复了transform中的一些bug  
+    导入lyh立绘
 
 
 ***更新提交后不要忘记修改这部分！***
-
-## pr 测试
 

@@ -81,7 +81,18 @@ define config.after_load_transition = None
 
 ## 在游戏结束之后进入主菜单时使用的转场。
 
-define config.end_game_transition = None
+define config.end_game_transition = MultipleTransition(
+    [
+        False, 
+        Dissolve(3),
+        Solid("#000"),
+        Pause(0.5),
+        Solid("#000"),
+        Dissolve(.7),
+        True
+    ]
+)
+
 
 
 ## 用于控制在游戏开始标签不存在时转场的变量。作为替代，在显示初始化场景后使用
@@ -110,7 +121,7 @@ define config.window_hide_transition = Dissolve(.2)
 
 ## 控制默认的文字显示速度。默认的 0 是瞬间，而其他数字则是每秒显示出的字符数。
 
-default preferences.text_cps = 0
+default preferences.text_cps = 25
 
 
 ## 默认的自动前进延迟。越大的数字会产生越长的等待，有效范围为 0 - 30。

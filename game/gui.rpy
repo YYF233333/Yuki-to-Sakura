@@ -62,7 +62,7 @@ define gui.name_text_font = "SourceHanSerifCN-Light.ttf"
 define gui.interface_text_font = "SourceHanSerifCN-Light.ttf"
 
 ## 普通对话文本的大小。
-define gui.text_size = 33
+define gui.text_size = 35
 
 ## 角色名称的大小。
 define gui.name_text_size = 45
