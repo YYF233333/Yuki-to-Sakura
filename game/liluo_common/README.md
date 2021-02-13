@@ -152,8 +152,8 @@ $ renpy.pause()
 
 | `normal` | `angry` | `sweat` |
 | ---- | ---- | ---- |
-| ![normal](../images/lyh/normal.png) | ![angry](../images/lyh/normala.png) | ![sweat](../images/lyh/normals.png) |
+| ![normal](https://cdn.jsdelivr.net/gh/touko628/cdn/normal.png) | ![angry](https://cdn.jsdelivr.net/gh/touko628/cdn/normala.png) | ![sweat](https://cdn.jsdelivr.net/gh/touko628/cdn/normals.png) |
 | `normal.png` | `normala.png` | `normals.png` |
 
 - 将 `character_image.rpy`中声明的 `lyh happy` 从 `lyh normal.png` 改为一个新增表情 `happy.png`。
-![happy](../images/lyh/happy.png)
+![happy](https://cdn.jsdelivr.net/gh/touko628/cdn/happy.png)
