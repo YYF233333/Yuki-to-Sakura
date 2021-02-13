@@ -9,7 +9,7 @@
 从右侧溶解出现在中央：`at s11rl`  
 从右侧溶解出现(多个人)：`at s21rl`、`at s22rl` 等，最多支持四个人，即 `at s41rl`、`at s42rl`...  
 
-溶解出现在中央(近距离)：`at sb11` 
+溶解出现在中央(近距离)：`at sb11`
 溶解出现在中央(近距离、多个人)：`at sb21`、`at sb22` 等，最多支持四个人，即 `at sb41`、`at sb42`...  
 从右侧溶解出现(近距离、多个人)：`at sb21rl`、`at sb22rl` 等，最多支持四个人，即 `at sb41rl`、`at sb42rl`...  
 
@@ -141,3 +141,19 @@ $ renpy.get_physical_size()
 ```Python
 $ renpy.pause()
 ```
+
+---
+2月13日更新：
+## lyh新表情系列。
+
+一些规范：
+- 以后每个角色单独在 `image` 文件夹下创建表情子文件夹，在 `character_image.rpy` 文件中声明时只须使用 `"<xxx>\<image>.png"` 即可。
+- 因为图集中 愤怒，流汗 这两个属于附属表情(具体表现为怒气符号与生草汗滴)，所以我们将表情分为三个类别 `normal`、`angry`、`sweat`。命名方式则为在 `normal` 系列表情的命名尾部加上 `a` 表示愤怒(angry)，加上 `s` 表示流汗(sweat)。而 `normal` 状态下沿用初始命名，但是将 `lyh` 前缀删除。例如  
+
+| `normal` | `angry` | `sweat` |
+| ---- | ---- | ---- |
+| ![normal](https://cdn.jsdelivr.net/gh/touko628/cdn/normal.png) | ![angry](https://cdn.jsdelivr.net/gh/touko628/cdn/normala.png) | ![sweat](https://cdn.jsdelivr.net/gh/touko628/cdn/normals.png) |
+| `normal.png` | `normala.png` | `normals.png` |
+
+- 将 `character_image.rpy`中声明的 `lyh happy` 从 `lyh normal.png` 改为一个新增表情 `happy.png`。
+![happy](https://cdn.jsdelivr.net/gh/touko628/cdn/happy.png)
