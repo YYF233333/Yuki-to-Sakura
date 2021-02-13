@@ -39,7 +39,7 @@ label start:
     "但是这货似乎毫不动摇，也不去管身旁我是听课还是神游还是去玩手机，始终是这种状态。"
     "下课铃响了。"
 
-    show lyh with dissolve
+    show lyh at s11
     lyh "「沈明，你来看看这个式子...」"
     sm  "「哪个。」"
 

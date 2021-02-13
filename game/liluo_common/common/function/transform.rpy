@@ -18,11 +18,11 @@ transform bs11:
     time 0.24
     ycenter 1.12 yoffset 0
 
-transform show_first(x=0.5, z=0.55):
+transform show_first(x=0.5, z=1.0):
     subpixel True
     on show:
         ycenter 1.12
-        zoom z*0.95 alpha 0.00
+        zoom z*0.92 alpha 0.00
         xcenter x yoffset -33
         easein .25 yoffset 0 zoom z*1.00 alpha 1.00
     on replace:
@@ -869,6 +869,73 @@ transform walk44:
 
 
 ## 过场动画
+
+define open = ImageDissolve("liluo_common/common/transition/close.png",
+                        time = 0.5, ramplen = 128, reverse = True)
+define close = ImageDissolve("liluo_common/common/transition/close.png",
+                        time = 0.5, ramplen = 128, reverse = False)
+define clockwise = ImageDissolve("liluo_common/common/transition/clockwise.png",
+                        time = 1.0, ramplen = 32, reverse = False)
+define anticlockwise = ImageDissolve("liluo_common/common/transition/clockwise.png",
+                            time = 1.0, ramplen = 32, reverse = True)
+
+define tran_close = MultipleTransition(
+    [
+        False,
+        close,
+        Solid("#000"),
+        close,
+        True
+    ]
+)
+define tran_clockwise = MultipleTransition(
+    [
+        False,
+        clockwise,
+        Solid("#000"),
+        clockwise,
+        True
+    ]
+)
+define tran_anticlockwise = MultipleTransition(
+    [
+        False,
+        anticlockwise,
+        Solid("#000"),
+        Pause(0.5),
+        Solid("#000"),
+        anticlockwise,
+        True
+    ]
+)
+
+define tran_water = ImageDissolve("liluo_common/common/transition/watertran.png",
+                            time = 1.0, ramplen = 128, reverse = False)
+define tran_light = ImageDissolve("liluo_common/common/transition/snaketran.png",
+                            time = 0.5, ramplen = 64, reverse = False)
+define tran_fog = ImageDissolve("liluo_common/common/transition/fogtran.png",
+                            time = 0.5, ramplen = 64, reverse = False)
+define tran_fast = ImageDissolve("liluo_common/common/transition/fasttran.png",
+                            time = 0.5, ramplen = 64, reverse = False)
+define tran_updown = ImageDissolve("liluo_common/common/transition/updowntran.png",
+                            time = 0.5, ramplen = 64, reverse = False)
+define tran_uf = ImageDissolve("liluo_common/common/transition/s2.png",
+                            time = 0.2, ramplen = 32, reverse = False)
+define tran_df = ImageDissolve("liluo_common/common/transition/s1.png",
+                            time = 0.2, ramplen = 32, reverse = False)
+define tran_rf = ImageDissolve("liluo_common/common/transition/right.png",
+                            time = 0.2, ramplen = 32, reverse = False)
+define tran_lf = ImageDissolve("liluo_common/common/transition/left.png",
+                            time = 0.2, ramplen = 32, reverse = False)
+
+define push_up = CropMove(0.4, "custom",
+                    startcrop=(0.0, 1.0, 1.0, 1.0),
+                    endcrop=(0.0, 0.0, 1.0, 1.0))
+
+define push_left = CropMove(2.0, "custom",
+                        startcrop=(0.5, 0.0, 0.0, 1.0),
+                        endcrop=(0.0, 0.0, 1.0, 1.0))
+
 define blink = MultipleTransition(
     [
         False, 
@@ -882,45 +949,3 @@ define blink = MultipleTransition(
         True
     ]
 )
-
-define open = ImageDissolve("liluo_common/common/transition/close.png",
-                        time = 0.5, ramplen = 128, reverse = True)
-
-define close = ImageDissolve("liluo_common/common/transition/close.png",
-                        time = 0.5, ramplen = 128, reverse = False)
-
-define clockwise = ImageDissolve("liluo_common/common/transition/clockwise.png",
-                        time = 1.0, ramplen = 32, reverse = False)
-
-define anticlockwise = ImageDissolve("liluo_common/common/transition/clockwise.png",
-                            time = 1.0, ramplen = 32, reverse = True)
-
-define push_left = CropMove(2.0, "custom", startcrop=(0.5, 0.0, 0.0, 1.0), endcrop=(0.0, 0.0, 1.0, 1.0))
-
-define tran_clockwise = MultipleTransition([False, clockwise ,Solid("#000"), clockwise, True])
-define tran_anticlockwise = MultipleTransition(
-    [
-        False,
-        anticlockwise,
-        Solid("#000"),
-        Pause(0.5),
-        Solid("#000"),
-        anticlockwise,
-        True
-    ]
-)
-
-define tran_close = MultipleTransition([False, close ,Solid("#000"), close ,True])
-define tran_water = ImageDissolve("liluo_common/common/transition/watertran.png", 1.0, 128)
-define tran_light = ImageDissolve("liluo_common/common/transition/snaketran.png", 0.5, 64)
-define tran_fog = ImageDissolve("liluo_common/common/transition/fogtran.png", 0.5, 64)
-define tran_fast = ImageDissolve("liluo_common/common/transition/fasttran.png", 0.5, 64)
-define tran_updown = ImageDissolve("liluo_common/common/transition/updowntran.png", 0.5, 64)
-define tran_uf = ImageDissolve("liluo_common/common/transition/s2.png", 0.2, 32)
-define tran_df = ImageDissolve("liluo_common/common/transition/s1.png", 0.2, 32)
-define tran_rf = ImageDissolve("liluo_common/common/transition/right.png", 0.2, 32)
-define tran_lf = ImageDissolve("liluo_common/common/transition/left.png", 0.2, 32)
-define push_up = CropMove(0.4, "custom",startcrop=(0.0, 1.0, 1.0, 1.0), endcrop=(0.0, 0.0, 1.0, 1.0))
-
-define config.window_hide_transition = close
-define config.window_show_transition = close

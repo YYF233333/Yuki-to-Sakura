@@ -113,8 +113,8 @@ define config.window = "auto"
 
 ## 用于显示和隐藏对话框窗口的转场
 
-define config.window_show_transition = Dissolve(.2)
-define config.window_hide_transition = Dissolve(.2)
+define config.window_show_transition = close
+define config.window_hide_transition = close
 
 
 ## 默认设置 ########################################################################
