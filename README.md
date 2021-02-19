@@ -26,3 +26,9 @@
 
 ***更新提交后不要忘记修改这部分！***
 
+## 如何将fork后的仓库与原仓库同步
+
+见此：
+
+[Github进行fork后如何与原仓库同步：重新fork很省事，但不如反复练习版本合并](https://github.com/selfteaching/the-craft-of-selfteaching/issues/67)
+
