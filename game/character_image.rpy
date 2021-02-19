@@ -118,3 +118,15 @@ image lyh ouch:
     size (1200, 2400)
     xalign 0.0
     yalign 0.0
+
+image lyh proud:
+    "lyh/proud.png"
+    size (1200, 2400)
+    xalign 0.0
+    yalign 0.0
+
+image lyh squints:
+    "lyh/squints.png"
+    size (1200, 2400)
+    xalign 0.0
+    yalign 0.0

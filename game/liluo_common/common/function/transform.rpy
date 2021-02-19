@@ -949,3 +949,20 @@ define blink = MultipleTransition(
         True
     ]
 )
+
+
+## 人物动画
+transform near(multiple=1.5):
+    subpixel True
+    on show:
+        ycenter 1.12
+        xcenter 0.5 yoffset -33
+        zoom 0.92 alpha 0.0
+        easein 0.3 zoom 1.00 alpha 1.00
+        easeout 0.3 alpha 0.0
+        xcenter 0.5 zoom 1.00 yoffset 1080 ycenter 0.5
+        easein 0.5 zoom multiple alpha 1.0
+    on replace:
+        linear 0.5 alpha 0.0
+        xcenter 0.5 zoom 1.00 yoffset 1080 ycenter 0.5
+        easein 0.5 zoom multiple alpha 1.0
